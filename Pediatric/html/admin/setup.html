@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" NAME="ROBOTS" CONTENT="NOARCHIVE"/>
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<title>建檔頁面</title>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.core.css" rel="stylesheet">  
+<link href="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.default.css" rel="stylesheet">  
+<script src="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../../js/setup.js"></script>
+</head>
+<style type="text/css">
+	#form{
+		background-color: lightblue;
+	}
+	#form2{
+		background-color: #FAEBD7;
+	}
+	textarea{
+		height: 100px;
+		width: 500px;
+	}
+</style>
+<body>
+	<!-- <button class="index">首頁</button> -->
+	<form id="form">
+		<h1>會員基本資料</h1>
+		
+		<p>
+			醫師姓名:
+			<input type="text" name="name" required/>
+		</p>
+		<p>
+			帳號:
+			<input type="text" name="account" placeholder="電子信箱" required/>
+		</p>
+		<p>
+			密碼:
+			<input type="password" name="pwd" required/>
+		</p>
+		<p>
+			密碼確認:
+			<input type="password" name="pwdconfirm" required/>
+		</p>
+		<p>
+			服務醫院:
+			<input type="text" name="hospital">
+		</p>
+		<p>
+			連絡電話:
+			<input type="text" name="phone">
+		</p>
+		<br/>
+		<button type="submit">建檔</button>
+	</form>
+</body>
+</html>

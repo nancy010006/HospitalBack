@@ -1,0 +1,57 @@
+user
+	Account
+	Pwd
+	Name
+	Phone
+	Email
+	Hospital
+
+data
+	Useraccount
+	Name
+	Gender
+	Birthday
+	week
+	weight
+	BirthHeadWidth
+	NowHeadWidth
+	PerinatalInsult 
+	Age
+	Hasepilepsy
+	Diagnosis
+	SeizureOnset
+	InfantileSpasms
+	HeatSpasm
+	SeizureClusterDuringFever 
+	GTC
+	PartialSeizure 
+	TonicSpasms
+	AbsenceSeizure
+	BurstSupression
+	Hypsarrythmia 
+	3HzSpikeWaves
+	SlowSpikeWaves (<3HZ)
+	GeneralizedSeizure
+	CerebralDysfunction 
+	UsedAntiepilepticDrugs	曾使用抗癲癇藥物
+	NowAntiepilepticDrugs
+	IntractableEpilepsy
+	AutisticFeature
+	HandStereotype
+	AcquiredMicrocephaly
+	Hypotonia
+	Dysmorphysim
+	MR
+	DD
+	BrainCT
+	BrainMRI 
+	SPECT
+	MetabolicExamination
+	CSF
+	LesionGene 
+	Mutation
+	AAChange
+	NovelReported
+	Exon
+	DeNovo
+	Response

@@ -1,0 +1,85 @@
+聯合門診日期 	date
+物理治療評估
+	工具		physical_tool
+	結果		physical_result
+	發展商數	physical_number
+	PR 			physical_pr
+職能治療評估
+	工具		function_tool
+	結果		function_result
+	發展商數	function_number
+	PR 			function_pr
+語言治療評估
+	口語理解
+		工具	oral_comprehension_tool
+		結果	oral_comprehension_result
+		能力	oral_comprehension_ability
+	口語表達
+		工具	oral_expression_tool
+		結果	oral_expression_result
+		能力	oral_expression_ability
+心理治療評估
+	工具1 		psychotherapy_tool
+	結果  		psychotherapy_result
+	全智商		psychotherapy_iq
+	PR    		psychotherapy_pr
+	工具2 		psychotherapy_tool2
+	結果  		psychotherapy_result2
+個案轉介來源	datafrom
+
+回覆資料庫					
+流水號						id
+病歷號碼					caseid
+身高						height
+體重						weight
+主要照顧者					caregiver
+就學歷史					history
+全半日						day
+家長主要在意問題			
+	語言					question_language
+	動作					question_action
+	學習					question_learn
+	人際					question_relationship
+	情緒					question_mood
+	活動與注意力			question_attention
+	感官知覺				question_perception
+	生活作息				question_lifestyle
+	怪異言行				question_strangestyle
+	自傷行為				question_selfmutilation
+	不知如何教導或幫助小孩	question_helpkid
+就診目的					target
+作答時間					writetime
+家庭狀況
+	父母婚姻狀況			family_married
+	手足人數				family_brother
+	父親資料
+		教育程度			family_feducation
+		職業				family_fcareer
+		國籍				family_fcountry
+	母親資料
+		教育程度			family_meducation
+		職業				family_mcareer
+		國籍				family_mcountry
+	目前居住家庭型態		family_family
+療育情形
+	療育現況				treat_status
+	曾接受過的療癒(上課種類	treat_type
+	療育(上課)地點			treat_location
+	目前的療育(上課)頻率	treat_hz
+發展及疾病史
+	家族史					history_family
+	母親懷孕狀況			
+		營養狀況			history_nutrition
+		生理疾病			history_disease
+		母親孕期用藥狀況	history_medication
+		母親物質濫用狀況	history_abuse
+		孕次				history_pregcount
+		生次				history_birthcount
+		流產				history_abortion
+		懷孕週數			history_pregweek
+		產程				history_pregprocess
+	新生兒篩檢				neonatal_screening
+	生理異常
+		新生兒及幼兒期		abnormal_neonatal
+		疾病史				abnormal_disease
+		發展史				abnormal_develop

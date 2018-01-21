@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" NAME="ROBOTS" CONTENT="NOARCHIVE"/>
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<title>所有會員資料</title>
+<script type="text/javascript" src="../../import/jQuery-3.2.1/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../import/DataTables-1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../../import/Buttons-1.4.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="../../import/JSZip-2.5.0/jszip.min.js"></script>
+<script type="text/javascript" src="../../import/Buttons-1.4.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="../../import/Select-1.2.3/js/dataTables.select.min.js"></script>
+
+<script src="../../js/allmember.js"></script>
+<link rel="stylesheet" type="text/css" href="../../import/DataTables-1.10.16/css/jquery.dataTables.min.css">
+<style type="text/css">
+	table { 
+  border: 0; 
+  font-family: arial; 
+  font-size:14px;
+} 
+.mainquestion{
+	background-color: #F5F5DC;
+}
+.mainquestion2{
+	background-color: #C1F5FC;
+}
+.mainquestion3{
+	background-color: #B1A5DC;
+}
+.mainquestion4{
+	background-color: #C8F5DC;
+}
+.mainquestion5{
+	background-color: #D1F51C;
+}
+.mainquestion6{
+	background-color: #486CFC;
+}
+/*th{
+	min-width:100px;
+}*/
+.long{
+	min-width:300px;
+}
+#table_paginate{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: white
+}
+#table_filter{
+	position: fixed;
+  top: 5%;
+  right: 0;
+  background-color: white
+}
+input[type=checkbox]{
+	height: 50px;
+	width: 50px;
+}
+tfoot {
+    display: table-header-group;
+}
+</style>
+</head>
+<body>
+	<h1>所有會員 <button class="index">首頁</button></h1>
+	<!-- 開始日<input type="date" id="startday">
+	結束日<input type="date" id="endday">
+	<button id="filter">篩選</button>
+	<button id="reset">重新設置篩選條件</button>
+	<button id="button">刪除</button> -->
+	<!-- <button id="update">修改</button> -->
+	<button id="detail">手機版查看</button>
+	<button id="delete">刪除會員</button>
+	<h3>點擊兩下即可查看該會員所有填答資料</h3>
+	<br>
+	<table border="1" id="table" class="display">
+		<thead id="thead">
+			<tr>
+				<th><input id ="selectall" type="checkbox"></th>
+				<th class="mainquestion">姓名</th>
+				<th class="mainquestion">帳號(電子郵件)</th>
+				<th class="mainquestion">電話</th>
+				<th class="mainquestion">服務醫院</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</tfoot>
+		<tbody id="tbody"></tbody>
+	</table>
+	<div id="progressbar"></div>
+	<!-- 下載檔案用 隱藏
+	<iframe name="DownLoadiFrame" width="0" height="0"></iframe>
+	<form target="DownLoadiFrame" id="DownLoadForm" action="../../Excel/output.xlsx" method="post">
+	    <input type="hidden" name="type" />
+	</form>
+	下載檔案用 隱藏
+	<button id="export">匯出EXCEL</button> -->
+	<!-- <a href="http://nancytest.esy.es/Ptt/contacts.csv" download="contacts.csv">Download file</a> -->
+</body>
+</html>
